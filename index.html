@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="15">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <a href="#">Serhaatz</a>
+            </div>
+            <ul class="ul">
+                <li>
+                    <a href="#">AnaSayfa</a>
+                </li>
+                <li>
+                    <a href="#product">Eğitimler</a>
+                </li>
+                <li>
+                    <a href="#about">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="#contact">İletişim</a>
+                </li>
+            </ul>
+            <div class="bar dnone">
+                <span id="span">Bar</span>
+            </div>
+        </nav>
+        <header>
+            <div class="content">
+                <div class="title">
+                    <h1>Bültene Kayıt ol</h1>
+                </div>
+                <div class="text">Günlük Görevini al</div>
+                <div class="form">
+                <input type="email" placeholder="zelaxsus@gmail.com">
+                    <button>- - ></button>
+                </div>
+            </div>
+        </header>
+        <!-- /*EĞİTİMLER*/ -->
+        <article class="product" id="product">
+            <h1 class="second1">Eğitimler</h1>
+            <div class="card">
+                <div class="cardimage">
+                    <img src="img/trw.jpg" alt="">
+                </div>
+                <div class="cardtitle">
+                    <h2>The Real World</h2>
+                </div>
+                <div class="cardtext">
+                <ul>
+                    <li>E-Ticaret</li>
+                    <li>Metin Yazarlığı</li>
+                    <li>Stoklar</li>
+                    <li>İş ve Finans</li>
+                    <li>Kripto Yatırımı</li>
+                    <li>Kripto Ticareti</li>
+                </ul>
+                </div>
+                <div class="cardbtn">
+                    Satın Al
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardimage">
+                    <img src="img/hu.jpg" alt="">
+                </div>
+                <div class="cardtitle">
+                    <h2>Hustler's University</h2>
+                </div>
+                <div class="cardtext">
+                <ul>
+                    <li>Girişimcilik Becerileri</li>
+                    <li>Liderlik ve Motivasyon</li>
+                    <li>Pazarlama ve Satış Stratejileri</li>
+                    <li>Finansal Bağımsızlık ve Yatırım</li>
+                    <li>Zihinsel ve Psikolojik Hazırlık</li>
+                    <li>Çevre</li>
+                </ul>
+                <div class="cardbtn">
+                    Satın Al
+                </div>
+                </div>
+            </div>
+            <div class="card green">
+                <div class="cardimage">
+                    <img src="img/neo.jpg" alt="">
+                </div>
+                <div class="cardtitle">
+                    <h2>M A T R İ X</h2>
+                </div>
+                <div class="cardtext">
+                <ul>
+                    <li>Boşa Yaşam</li>
+                    <li>Bulanık Zihin</li>
+                    <li>Başkasını Suçlamak</li>
+                    <li>Kaderim Böyleymiş</li>
+                    <li>Zenginler Kötüdür</li>
+                    <li>Ertelemek</li>
+                </ul>
+                </div>
+                <div class="cardbtn">
+                    FREE
+                </div>
+            </div>
+        </article>
+        <article id="about">
+            <h1 class="abouth1 second1">Hakkımızda <br> Anlatmaya Gerek Yok</h1>
+
+            <div class="wins">
+                <div class="winsimage second2">
+                    <img src="img/1.webp" alt="">
+                    <div class="hr second3"></div>
+
+                </div>
+            </div>
+            <div class="wins">
+                <div class="winsimage second2">
+                    <img src="img/2.webp" alt="">
+                    <div class="hr second3"></div>
+
+                </div>
+            </div>
+            <div class="wins">
+                <div class="winsimage second2">
+                    <img src="img/3.webp" alt="">
+                    <div class="hr second3"></div>
+
+                </div>
+            </div>
+            <div class="wins">
+                <div class="winsimage second3">
+                    <img src="img/4.webp" alt="">
+                </div>
+            </div>
+        </article>
+        <article id="contact" style="color: white; text-align: center; margin: 5%;">
+            <h1>İletişim</h1>
+            <div class="contact-form">
+                <h2>Discord</h2>
+                <h2 style="color: red;">@zelaxsus</h2>
+            </div>
+        </article>
+    <footer>
+        <hr>
+        <p>By Serhaatz</p>
+    </footer>
+    </main>
+    <script>
+        ScrollReveal().reveal('.ul',{delay:500});
+        ScrollReveal().reveal('.content',{delay:1000});
+        ScrollReveal().reveal('.second1',{delay:1000});
+        ScrollReveal().reveal('.card',{delay:1500});
+        ScrollReveal().reveal('.second2',{delay:1500});
+        ScrollReveal().reveal('.second3',{delay:2000});
+        ScrollReveal().reveal('.second4',{delay:2500});
+    </script>
+    <script>
+         const ul=document.querySelector('.ul')
+        const span=document.querySelector('#span')
+        span.addEventListener('click',()=>{
+            ul.classList.toggle('dnone')
+        })
+    </script>
+</body>
+</html>

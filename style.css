@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: black;
+}
+a{
+    font-size: 1.5em;
+    color: #fff;
+}
+span{
+    color: #fff;
+}
+main{
+    margin: 0 5%;
+}
+nav{
+    display: flex;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    line-height: 5;
+}
+nav ul li a{
+    padding: 12px 15px;
+    line-height: 2em;
+}
+.logo{
+    font-size: 2.3em;
+    line-height: 1.4;
+}
+.logo a{
+    margin-right: 100px;
+}
+.bar{
+    line-height: 3.5;
+}
+#span{
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.dnone{
+    display: none;
+}
+nav ul li:hover{
+    background-color: #ffffff30;
+    transform: scale(0.9);
+    border-radius: 10px;
+    transition: 1s ease;
+    
+}
+#span{
+    background-color: #ffffff30;
+    transform: scale(0.9);
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+/*HEADER*/
+header{
+    background:
+    linear-gradient(
+          rgba(0, 0, 3, 0.6), 
+          rgba(0, 0, 0, 0.9)
+
+        ),
+        url('img/tate.png');
+    background-position: left;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+header .content{
+    height: auto;
+    position: sticky;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    color: white;
+}
+header .title,
+header .text{
+    font-size: 220%;
+}
+header .form{
+    height: auto;
+    margin: 2%;
+}
+header input{
+    width: 250px;
+    background-color: #ffffff3f;
+    border: 0;
+    border-radius: 12px;
+    font-size: 20px;
+    height: 3em;
+    padding: 1%;
+}
+header button{
+    height: 3em;
+    background-color: #ffffff48;
+    font-size: 20px;
+
+    border-radius: 12px;
+    border: 0;
+    width: 4rem;
+}
+header button:hover{
+    background-color: #ffffff80;
+        color: black;
+        scale: 0.9;
+        border: 1px solid #fff;
+        transition: 2s ease-out;
+}
+header input:hover{
+    border: 1px solid #fff;
+    transition: 2s ease-out;
+}
+/*EĞİTİMLER ARTİCLE*/
+    .product{
+        margin: 10% 0;
+        color: #fff;
+        text-align: center;
+    }
+    .product h1{
+        margin: 2% 0;
+        display: block;
+        font-size: 300%;
+    }
+.card{
+    background-color: transparent;
+    height: auto;
+    width: 25%;
+    border: 2px solid #ffdd00;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    margin: 0 3%;
+    display: inline-block;
+}
+.card:hover{
+    scale: 1.1;
+    transition: 2s ease;
+}
+
+.cardimage{
+    max-height: 300px;
+}
+.cardimage img{
+    max-width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 150px;
+}
+.cardtext li{
+    margin: 3% 0;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.cardbtn{
+    padding: 10px 0;
+    margin:0 31%;
+    margin-top: 10%;
+    width: 100px;
+    border: 1px solid #ffdd00;
+    border-radius: 10px;
+    display: block;
+}
+.cardbtn:hover{
+    background: #ffffff48;
+    transition: ease 2s;
+}
+.green{
+    color: green;
+}
+/*HHAKKİMİZDA*/
+.wins{
+    text-align: center;
+    display: flex;
+    color: white;
+    margin: 3% 30%;
+    height: auto;
+}
+.winsimage{
+    width: 100%;
+    margin: 5% 1%;
+}
+.winsimage img{
+    width: 100%;
+}
+.hr{
+    border-left: 3px solid #e67e22;
+    height: 10rem;
+    margin:  0 50%;
+    margin-top: 10%;
+
+}
+
+
+
+
+.abouth1{
+    color: white;
+    width: 100%;
+    font-size: 250%;
+    text-align: center;}
+
+
+ 
+
+/*NAV RESPONSİVE*/
+@media  screen and (min-width:900px) {
+   
+    nav ul{
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+        line-height: 5;
+    }
+    
+    .dnone{
+        display: block;
+        
+    }
+
+    #span{
+        display: none;
+    }
+    
+}
+@media  screen and (max-width:900px) {
+    nav ul{
+        flex-direction: column;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        z-index: 10;
+        display: none;
+        width: auto;
+        background-color: transparent;
+    }
+    
+    .bar{
+        margin-top: 2%;
+        position: absolute;
+       left: 85%;
+       margin-right: 50px;
+       display: block;
+    }
+    .dnone{
+        display: block;
+    }
+    
+}
+
+@media screen  and (max-width:1250px){
+    
+    .card{
+        padding: 1%;
+    margin: 0 1%;
+    }
+}
+
+@media screen  and (max-width:1150px){
+    
+    .card{
+        width: 35%;
+        padding: 2%;
+         margin: 2% 5%;
+    }
+}
+@media screen  and (max-width:990px){
+
+    header .title,.text{
+        font-size: 150%;
+    }
+    header input, header button{
+        font-size: 17px;
+    }
+    .card{
+        width: 50%;
+        margin: 2% auto;
+    }
+
+    .cardbtn{
+        margin: 0 auto;
+    }
+    .cardimage img{
+        width: 80%;
+    }
+
+}
+@media screen  and (max-width:600px){
+
+        nav{
+            height: 60px;
+        }
+        #span
+        {
+            position: relative;
+            top: -8px;
+        }
+        .title h1{
+            font-size: 130%;
+        }
+        header .text{
+            font-size: 130%;
+        }
+      
+    .logo{
+        font-size: 150%;
+    }
+     
+    header input, header button{
+        font-size: 13px;
+    }
+    header button{
+        margin: 15px 0;
+    }
+   
+
+    .cardbtn{
+        margin: 0 auto;
+    }
+    .cardimage img{
+        width: 100%;
+    }
+    .card ul li{
+        font-size: 80%;
+    }
+    .abouth1 h1{
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 125%;
+    }
+
+}
